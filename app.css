@@ -37,7 +37,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  background: #fff5f9;
+  background: #e4eefa;
 }
 
 button {
@@ -118,11 +118,11 @@ button:active {
 }
 
 .droppable {
-  background: #ffe3ee;
+  background: #d6e1ff;
 }
 
 #finished-projects .droppable {
-  background: #d6e1ff;
+  background: #a4eeb6;
 }
 
 #user-input {
