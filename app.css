@@ -3,11 +3,15 @@
 }
 
 html {
-  font-family: sans-serif;
+  --inputWidth: 60%;
+  --listWidth: 80%;
+  --activeProjectsColor: #0044ff;
+  --finishedProjectsColor: #23f558;
 }
 
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 label,
@@ -38,8 +42,8 @@ textarea:focus {
 
 button {
   font: inherit;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: var(--activeProjectsColor);
+  border: 1px solid var(--activeProjectsColor);
   cursor: pointer;
   color: white;
   padding: 0.75rem 1rem;
@@ -51,17 +55,18 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #a80041;
-  border-color: #a80041;
+  background: #002ca5;
+  border-color: #002ca5;
 }
 
 .projects {
-  margin: 1rem;
-  border: 1px solid #ff0062;
+  margin: 1rem auto;
+  border: 1px solid var(--activeProjectsColor);
+  width: var(--listWidth);
 }
 
 .projects header {
-  background: #ff0062;
+  background: var(--activeProjectsColor);
   height: 3.5rem;
   display: flex;
   justify-content: center;
@@ -69,11 +74,11 @@ button:active {
 }
 
 #finished-projects {
-  border-color: #0044ff;
+  border-color: var(--finishedProjectsColor);
 }
 
 #finished-projects header {
-  background: #0044ff;
+  background: var(--finishedProjectsColor);
 }
 
 .projects h2 {
@@ -95,12 +100,12 @@ button:active {
 }
 
 .projects li h2 {
-  color: #ff0062;
+  color: var(--activeProjectsColor);
   margin: 0.5rem 0;
 }
 
 #finished-projects li h2 {
-  color: #0044ff;
+  color: var(--finishedProjectsColor);
 }
 
 .projects li h3 {
@@ -121,8 +126,9 @@ button:active {
 }
 
 #user-input {
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 1rem;
-  border: 1px solid #ff0062;
+  border: 1px solid var(--activeProjectsColor);
   background: #f7f7f7;
+  width: var(--inputWidth);
 }
